@@ -1,0 +1,25 @@
+.team {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team-member {
+  background: #eee;
+  padding: 1.5rem;
+  flex: 1 1 200px;
+  min-width: 200px;
+  border-radius: 8px;
+}

@@ -1,0 +1,31 @@
+import React, { useState } from 'react';
+import './Navbar.css';
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
+  return (
+    <nav className="navbar">
+      <div className="logo">ArqMat</div>
+
+      {/* Navigation Links */}
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
+        <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
+        <li><a href="#services" onClick={() => setIsOpen(false)}>Services</a></li>
+        <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
+        <li><a href="#team" onClick={() => setIsOpen(false)}>Team</a></li>
+        <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
+      </ul>
+
+      {/* Hamburger Menu */}
+      <div className="menu-toggle" onClick={toggleMenu}>
+        &#9776;
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
