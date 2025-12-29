@@ -1,7 +1,6 @@
 .home {
   height: 80vh;
-  background: url('https://images.unsplash.com/photo-1581091870620-57fa41f233f5?auto=format&fit=crop&w=1650&q=80') 
-              center/cover no-repeat;
+  background-color: #30353b;
   display: flex;
   flex-direction: column;
   justify-content: center;

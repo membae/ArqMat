@@ -6,19 +6,19 @@ import Contact from './components/Contact'
 import Services from './components/Services'
 import Home from './components/Home'
 import Projects from './components/Projects'
+import Team from './components/Team'
 
 function App() {
-  return (
+   return (
     <>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path='/navbar' element={<Navbar/>}/>
-      <Route path='/contact' element={<Contact/>}/>
-      <Route path='/services' element={<Services/>}/>
-      <Route path='/projects' element={<Projects/>}/>
       
-      </Routes>    
+      <Navbar />
+      <Home />
+      <About />
+      <Services />
+      <Projects />
+      <Team />
+      <Contact />
     </>
   )
 }

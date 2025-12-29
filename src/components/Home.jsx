@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css'; // Make sure this file exists for styling
+import Navbar from "./Navbar"
 
 function Home() {
   return (
